@@ -1,0 +1,25 @@
+body {
+  color: white;
+}
+body nav {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 90px;
+  padding-left: 90px;
+  font-size: 20px;
+}
+body nav ul {
+  display: flex;
+  gap: 60px;
+  text-decoration: none;
+  list-style: none;
+  font-size: 25px;
+  align-items: center;
+}
+body nav ul a {
+  color: white;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,32 @@
+$color : white;
+$size : 25px;
+
+body{
+    color: $color;
+  
+    nav{
+        background-color: blue;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 90px;
+        padding-left: 90px;
+        font-size: 20px;
+    
+
+    ul{
+        display: flex;
+        gap: 60px;
+        text-decoration: none;
+        list-style: none;
+        font-size: $size;
+        align-items: center;
+
+        a{
+            color: white;
+            text-decoration: none;
+        }
+      
+    }
+  }
+}
+ 

@@ -1,12 +1,17 @@
 $color : orangered;
 $t-color : white; 
 
+@mixin WIDTH-mixin(){
+    width: 33%;
+    height: 100%;
+}
+
 *{
     margin: 0;
 }
 nav{
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color:$color;
     display: flex;
     align-items: center;
@@ -22,12 +27,16 @@ nav{
         list-style: none;
         margin-right: 100px;
     }
+    li:hover{
+        color: black;
+    }
+
 }
 
 .d2{
     width: 100%;
     height: 600px;
-    background-image: url(back-g.avif);
+    background-image: url(bg-image2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -38,9 +47,10 @@ nav{
 
     .font{
         font-size: 50px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 700;
         span{
-            color: blue;
+            color: rgb(32, 32, 221);
         }
     }
 
@@ -48,5 +58,81 @@ nav{
         background-color: $color;
         padding: 10px 30px;
         color: white;
+        border: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
     }
+}
+.d3{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    .d31{
+        @include WIDTH-mixin();
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .d311{
+            width: 70%;
+            height: 70%;
+            margin-top: 50px;
+            background-color:color(from color srgb r g b);
+            #sp{
+                font-size: 40px;
+                margin-right: 20px;
+            }
+            span{
+                font-size: 30px;
+            }
+            #icon{
+                margin-right: 20px;
+            }
+        }
+    }
+    .d32{ @include WIDTH-mixin();
+        display: flex;
+        align-items: center;
+        // grid-template-columns: auto auto auto;
+        justify-content: space-around;
+
+        .d321{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            width: 70%;
+            height: 70%;
+
+            .pt{
+                opacity: 0.6;
+            }
+        }
+    
+    }
+    .d33{ @include WIDTH-mixin();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .d331{
+
+            width: 70%;
+            height: 70%;
+
+            #i3{
+                font-size: 30px;
+                margin-right: 30px;
+                color: white;
+                background-color: black;
+            }
+        }
+    
+    }
+}
+
+.d4{
+    text-align: center;
+    opacity: 0.7;
+    margin-left: 20px;
 }

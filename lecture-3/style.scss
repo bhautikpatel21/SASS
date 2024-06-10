@@ -1,0 +1,8 @@
+@import "mixin";
+
+.d1{
+    @include content(rgb(255, 0, 0));
+}
+.d2{
+    @include content(blue);
+}
